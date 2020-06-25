@@ -1,0 +1,22 @@
+@media (min-width: 400px) {
+  .heading-large {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 700px) {
+  .heading-large {
+    font-size: 2.5rem;
+  }
+}
+
+.container {
+  width: 100%;
+  padding: 10px;
+}
+
+.payment__logo {
+  width: 100%;
+}
+.payment__logo-box {
+  width: 25%;
+}

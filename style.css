@@ -10,9 +10,22 @@ span.rtl {
     float: right;
     margin: 0.5rem;
 } */
+@font-face {
+  font-family: "GE SS Two Medium";
+  src: url("./02f502e5eefeb353e5f83fc5045348dc.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
-body {
-  font-family: 'Lato';
+
+body#body {
+  font-family: 'GE SS Two Medium';
+}
+
+:root {
+  --primary: #f58320 !important;
+  --primary-hover: #f58320 !important;
+  --primary-border-hover: #f58320 !important
 }
 
 @media (min-width: 400px) {
@@ -34,6 +47,7 @@ body {
 
 .payment__logo {
   width: 100%;
+  max-width: 150px;
 }
 
 .payment__logo-box {
@@ -73,8 +87,12 @@ body {
   opacity: 0;
 }
 
-.payment-method__input:checked + .payment-method__button::after {
+.payment-method__input:checked+.payment-method__button::after {
   opacity: 1;
+}
+
+.text-1 {
+  font-size: .5rem;
 }
 
 #selection-null {

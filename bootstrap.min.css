@@ -5,7 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
-    --blue: #007bff;
+    --blue: #f58320;
     --indigo: #6610f2;
     --purple: #6f42c1;
     --pink: #e83e8c;
@@ -18,7 +18,9 @@
     --white: #fff;
     --gray: #6c757d;
     --gray-dark: #343a40;
-    --primary: #007bff;
+    --primary: #f58320;
+    --primary-with-opacity: #f5832080;
+    --primary-with-slight-change: #f58320e6;
     --secondary: #6c757d;
     --success: #28a745;
     --info: #17a2b8;
@@ -2920,37 +2922,37 @@ fieldset:disabled a.btn {
 
 .btn-primary:hover {
     color: #fff;
-    background-color: var(--primary-hover);
-    border-color: var(--primary-border-hover)
+    background-color: var(--primary-with-slight-change);
+    border-color: var(--primary)
 }
 
 .btn-primary.focus,
 .btn-primary:focus {
     color: #fff;
-    background-color: var(--primary-hover);
-    border-color: var(--primary-border-hover);
-    box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5)
+    background-color: var(--primary-with-slight-change);
+    border-color: var(--primary);
+    box-shadow: 0 0 0 .2rem var(--primary-with-opacity)
 }
 
 .btn-primary.disabled,
 .btn-primary:disabled {
     color: #fff;
-    background-color: var(--primary);
-    border-color: var(--primary)
+    background-color: var(--primary-with-slight-change);
+    border-color: var(--primary-with-slight-change)
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: var(--primary-border-hover);
-    border-color: #005cbf
+    background-color: var(--primary-with-slight-change);
+    border-color: var(--primary)
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus,
 .btn-primary:not(:disabled):not(.disabled):active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5)
+    box-shadow: 0 0 0 .2rem var(--primary-with-opacity)
 }
 
 .btn-secondary {
@@ -5675,7 +5677,7 @@ a.badge:hover {
 a.badge-primary:focus,
 a.badge-primary:hover {
     color: #fff;
-    background-color: var(--primary-border-hover)
+    background-color: var(--primary)
 }
 
 a.badge-primary.focus,
@@ -7344,7 +7346,7 @@ a.bg-primary:focus,
 a.bg-primary:hover,
 button.bg-primary:focus,
 button.bg-primary:hover {
-    background-color: var(--primary-border-hover) !important
+    background-color: var(--primary) !important
 }
 
 .bg-secondary {

@@ -1,100 +1,186 @@
-/* html {
-    direction: rtl;
-}
-
 body {
-    text-align: right;
+    font-family: "Lato", sans-serif;
 }
 
-span.rtl {
-    float: right;
-    margin: 0.5rem;
-} */
-@font-face {
-  font-family: "GE SS Two Medium";
-  src: url("./02f502e5eefeb353e5f83fc5045348dc.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: var(--primary);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1;
+    display: block;
+    transition: all .4s;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
+    background-size: 250%;
+}
+
+.sidenav a:hover:not(:first-child) {
+    background-position: 100%;
+    transform: translateX(0.5REM);
+}
+
+.sidenav a:hover {
+    color: #000;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.side-nav__icon {
+    color: var(--primary);
+    font-size: 30px;
+    cursor: pointer;
 }
 
 
-body#body {
-  font-family: 'GE SS Two Medium';
+@media (min-width: 770px) {
+    .mobile-content-display {
+        display: none;
+    }
 }
 
-:root {
-  --primary: #f58320 !important;
-  --primary-hover: #f58320 !important;
-  --primary-border-hover: #f58320 !important
+button.navbar-toggler:focus {
+    outline: none;
 }
 
-@media (min-width: 400px) {
-  .heading-large {
-    font-size: 2rem;
-  }
+@media(max-width:400px) {
+    a.navbar-brand {
+        width: 4rem
+    }
 }
 
-@media (min-width: 700px) {
-  .heading-large {
-    font-size: 2.5rem;
-  }
+@media(min-width:400px) {
+    a.navbar-brand {
+        width: 6rem
+    }
 }
 
-.container {
-  width: 100%;
-  padding: 10px;
+@media(min-width:700px) {
+    a.navbar-brand {
+        width: 7rem
+    }
 }
 
-.payment__logo {
-  width: 100%;
-  max-width: 150px;
+
+.card {
+    background-color: orangered;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.payment__logo-box {
-  width: 25%;
+.card--slider {
+    min-width: 100%;
+    display: flex;
+    overflow-x: auto;
 }
 
-.payment-method__input {
-  display: none;
+.card--content {
+    min-width: 120px;
+    margin: 5px;
+    box-shadow: 0px .1rem rgba(0, 0, 0, .1);
 }
 
-.payment-method__label {
-  cursor: pointer;
-  position: relative;
+.card--slider::-webkit-scrollbar {
+    display: none;
 }
 
-.payment-method__button {
-  width: 1rem;
-  height: 1rem;
-  border: 2px solid var(--primary);
-  display: inline-block;
-  border-radius: 100px;
-  transform: translateY(3px);
-  margin-right: 0.5rem;
+.card--slider {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-.payment-method__button::after {
-  content: '';
-  width: 0.5rem;
-  height: 0.5rem;
-  background-color: var(--primary);
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  opacity: 0;
+.img-same-height {
+    height: 60px;
+    overflow: hidden;
 }
 
-.payment-method__input:checked+.payment-method__button::after {
-  opacity: 1;
+@media(min-width:700px) {
+    .card--content {
+        min-width: 200px;
+    }
+
+    .img-same-height {
+        height: 100px;
+        overflow: hidden;
+    }
 }
 
-.text-1 {
-  font-size: .5rem;
+.our-menu-img {
+    width: 100%;
+    height: 120px;
+    border: white;
+    border-radius: 0.5rem;
+    object-fit: cover;
+    filter: brightness(70%);
+    /* background-color: rgba(0, 0, 0, 1); */
+
 }
 
-#selection-null {
-  display: none;
+.our-menu-card {
+    position: relative;
+}
+
+.our-menu-text {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    margin: 0px;
+    font-size: 1.2rem;
+    font-weight: 900;
+    /* text-shadow: 1px 1px 10px black, -1px -1px 10px black; */
+
+}
+
+.carousel-img {
+    width: 100%;
+
+    height: 150px;
+    object-fit: cover;
+}
+
+@media(min-width:400px) {
+    .carousel-img {
+        height: 200px;
+    }
+}
+
+@media(min-width:550px) {
+    .carousel-img {
+        height: 250px;
+    }
+}
+
+@media(min-width:550px) {
+    .carousel-img {
+        height: 430px;
+    }
 }

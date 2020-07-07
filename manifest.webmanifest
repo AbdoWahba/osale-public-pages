@@ -1,0 +1,18 @@
+{
+  "name": "Osale Prime System",
+  "short_name": "Osale",
+  "start_url": "/index.html",
+  "description": "food delivery app",
+  "display": "standalone",
+  "background_color": "#f58320",
+  "theme_color": "#FFE1C4",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/img/birds-logo.png",
+      "type": "image/png",
+      "sizes": "192*192"
+    }
+  ]
+}

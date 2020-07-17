@@ -2372,7 +2372,7 @@ pre code {
     background-color: #fff;
     border-color: #80bdff;
     outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+    box-shadow: 0 0 0 .2rem var(--primary-with-opacity)
 }
 
 .form-control::-webkit-input-placeholder {
@@ -2897,7 +2897,7 @@ textarea.form-control.is-invalid {
 .btn.focus,
 .btn:focus {
     outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+    box-shadow: 0 0 0 .2rem var(--primary-with-opacity)
 }
 
 .btn.disabled,
@@ -4228,7 +4228,7 @@ input[type=submit].btn-block {
 }
 
 .custom-control-input:focus~.custom-control-label::before {
-    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+    box-shadow: 0 0 0 .2rem var(--primary-with-opacity)
 }
 
 .custom-control-input:focus:not(:checked)~.custom-control-label::before {
@@ -4378,7 +4378,7 @@ input[type=submit].btn-block {
 .custom-select:focus {
     border-color: #80bdff;
     outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+    box-shadow: 0 0 0 .2rem var(--primary-with-opacity)
 }
 
 .custom-select:focus::-ms-value {
@@ -4442,7 +4442,7 @@ input[type=submit].btn-block {
 
 .custom-file-input:focus~.custom-file-label {
     border-color: #80bdff;
-    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+    box-shadow: 0 0 0 .2rem var(--primary-with-opacity)
 }
 
 .custom-file-input:disabled~.custom-file-label,
@@ -4506,15 +4506,15 @@ input[type=submit].btn-block {
 }
 
 .custom-range:focus::-webkit-slider-thumb {
-    box-shadow: 0 0 0 1px #fff, 0 0 0 .2rem rgba(0, 123, 255, .25)
+    box-shadow: 0 0 0 1px #fff, 0 0 0 .2rem var(--primary-with-opacity)
 }
 
 .custom-range:focus::-moz-range-thumb {
-    box-shadow: 0 0 0 1px #fff, 0 0 0 .2rem rgba(0, 123, 255, .25)
+    box-shadow: 0 0 0 1px #fff, 0 0 0 .2rem var(--primary-with-opacity)
 }
 
 .custom-range:focus::-ms-thumb {
-    box-shadow: 0 0 0 1px #fff, 0 0 0 .2rem rgba(0, 123, 255, .25)
+    box-shadow: 0 0 0 1px #fff, 0 0 0 .2rem var(--primary-with-opacity)
 }
 
 .custom-range::-moz-focus-outer {
@@ -5569,7 +5569,7 @@ input[type=submit].btn-block {
 .page-link:focus {
     z-index: 3;
     outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25)
+    box-shadow: 0 0 0 .2rem var(--primary-with-opacity)
 }
 
 .page-item:first-child .page-link {

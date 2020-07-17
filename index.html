@@ -1,255 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./img/birds-logo.png" type="image/png" />
-    <link rel="stylesheet" href="bootstrap.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Lato"
-      rel="stylesheet"
-    />
-    <link rel="manifest" href="/manifest.webmanifest" />
-    <title>Osale</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div id="mySidenav" class="sidenav list-group mobile-content-display">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-        >&times;</a
-      >
-      <a href="#" class="list-group-item list-group-item-action active"
-        >About</a
-      >
-      <a href="#" class="list-group-item list-group-item-action active"
-        >Services</a
-      >
-      <a href="#" class="list-group-item list-group-item-action active"
-        >Clients</a
-      >
-      <a href="#" class="list-group-item list-group-item-action active"
-        >Contact</a
-      >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./img/birds-logo.png" type="image/png" />
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+  <title>Osale</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="mySidenav" class="sidenav list-group mobile-content-display">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="./index.html" class="list-group-item list-group-item-action active">Home</a>
+
+    <a href="./signin.html" class="list-group-item list-group-item-action active">Sign in</a>
+    <a href="./register.html" class="list-group-item list-group-item-action active">Sign up</a>
+
+  </div>
+
+  <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
+    <a class="navbar-brand" href="#">
+      <img src="./img/birds-logo.png" alt="" style="width: 100%;" />
+    </a>
+
+    <button class="navbar-toggler border-0" type="button" data-toggle="collapse" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="side-nav__icon mobile-content-display" onclick="openNav()">
+        &#9776;
+      </span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./signin.html">Sign in</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./register.html">Sign up</a>
+        </li>
+      </ul>
     </div>
-
-    <nav class="navbar navbar-expand-sm navbar-light bg-transparent">
-      <a class="navbar-brand" href="#">
-        <img src="./img/birds-logo.png" alt="" style="width: 100%;" />
-      </a>
-
-      <button
-        class="navbar-toggler border-0"
-        type="button"
-        data-toggle="collapse"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="side-nav__icon mobile-content-display" onclick="openNav()">
-          &#9776;
-        </span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-        </ul>
+  </nav>
+  <div class="container" id="main-container">
+    <div class="row">
+      <div class="col-lg-8 m-auto">
+        <div id="slider1" class="carousel slide mb-5" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img class="d-block img-fluid carousel-img w-100" src="./img/download.jpeg" alt="First Slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid carousel-img w-100" src="./img/download1.jpeg" alt="Second Slide" />
+            </div>
+            <div class="carousel-item">
+              <img class="d-block img-fluid carousel-img w-100" src="./img/download2.jpeg" alt="Third Slide" />
+            </div>
+          </div>
+        </div>
       </div>
-    </nav>
-    <div class="container" id="main-container">
+    </div>
+    <section class="card-section">
+      <h4>Best Seller</h4>
+      <div class="card--slider">
+        <div class="card--content shadow-sm p-3 mb-5 bg-white rounded">
+          <div class="img-same-height">
+            <img class="card-img-top" src="./img/download.jpeg" alt="Card image cap" />
+          </div>
+          <div class="card-body p-1">
+            <p class="card-title w-100 mb-1">Fried Quail</p>
+            <p class="w-100 text-primary mb-1"><strong>39.0 EGP</strong></p>
+            <a href="#" class="btn btn-primary btn-block">Add</a>
+          </div>
+        </div>
+        <div class="card--content shadow-sm p-3 mb-5 bg-white rounded">
+          <div class="img-same-height">
+            <img class="card-img-top" src="./img/download1.jpeg" alt="Card image cap" />
+          </div>
+          <div class="card-body p-1">
+            <p class="card-title w-100 mb-1">Fried Quail</p>
+            <p class="w-100 text-primary mb-1"><strong>39.0 EGP</strong></p>
+            <a href="#" class="btn btn-primary btn-block">Add</a>
+          </div>
+        </div>
+        <div class="card--content shadow-sm p-3 mb-5 bg-white rounded">
+          <div class="img-same-height">
+            <img class="card-img-top" src="./img/download2.jpeg" alt="Card image cap" />
+          </div>
+          <div class="card-body p-1">
+            <p class="card-title w-100 mb-1">Fried Quail</p>
+            <p class="w-100 text-primary mb-1"><strong>39.0 EGP</strong></p>
+            <a href="#" class="btn btn-primary btn-block">Add</a>
+          </div>
+        </div>
+        <div class="card--content shadow-sm p-3 mb-5 bg-white rounded">
+          <div class="img-same-height">
+            <img class="card-img-top" src="./img/download3.jpeg" alt="Card image cap" />
+          </div>
+          <div class="card-body p-1">
+            <p class="card-title w-100 mb-1">Fried Quail</p>
+            <p class="w-100 text-primary mb-1"><strong>39.0 EGP</strong></p>
+            <a href="#" class="btn btn-primary btn-block">Add</a>
+          </div>
+        </div>
+        <div class="card--content shadow-sm p-3 mb-5 bg-white rounded">
+          <div class="img-same-height">
+            <img class="card-img-top" src="./img/download.jpeg" alt="Card image cap" />
+          </div>
+          <div class="card-body p-1">
+            <p class="card-title w-100 mb-1">Fried Quail</p>
+            <p class="w-100 text-primary mb-1"><strong>39.0 EGP</strong></p>
+            <a href="#" class="btn btn-primary btn-block">Add</a>
+          </div>
+        </div>
+        <div class="card--content shadow-sm p-3 mb-5 bg-white rounded">
+          <div class="img-same-height">
+            <img class="card-img-top" src="./img/download1.jpeg" alt="Card image cap" />
+          </div>
+          <div class="card-body p-1">
+            <p class="card-title w-100 mb-1">Fried Quail</p>
+            <p class="w-100 text-primary mb-1"><strong>39.0 EGP</strong></p>
+            <a href="#" class="btn btn-primary btn-block">Add</a>
+          </div>
+        </div>
+        <div class="card--content shadow-sm p-3 mb-5 bg-white rounded">
+          <div class="img-same-height">
+            <img class="card-img-top" src="./img/download2.jpeg" alt="Card image cap" />
+          </div>
+          <div class="card-body p-1">
+            <p class="card-title w-100 mb-1">Fried Quail</p>
+            <p class="w-100 text-primary mb-1"><strong>39.0 EGP</strong></p>
+            <a href="#" class="btn btn-primary btn-block">Add</a>
+          </div>
+        </div>
+        <div class="card--content shadow-sm p-3 mb-5 bg-white rounded">
+          <div class="img-same-height">
+            <img class="card-img-top" src="./img/download3.jpeg" alt="Card image cap" />
+          </div>
+          <div class="card-body p-1">
+            <p class="card-title w-100 mb-1">Fried Quail</p>
+            <p class="w-100 text-primary mb-1"><strong>39.0 EGP</strong></p>
+            <a href="#" class="btn btn-primary btn-block">Add</a>
+          </div>
+        </div>
+        <div class="card--content shadow-sm p-3 mb-5 bg-white rounded">
+          <div class="img-same-height">
+            <img class="card-img-top" src="./img/download.jpeg" alt="Card image cap" />
+          </div>
+          <div class="card-body p-1">
+            <p class="card-title w-100 mb-1">Fried Quail</p>
+            <p class="w-100 text-primary mb-1"><strong>39.0 EGP</strong></p>
+            <a href="#" class="btn btn-primary btn-block">Add</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our-menu-section">
+      <h4>OUR MENU</h4>
       <div class="row">
-        <div class="col-lg-8 m-auto">
-          <div id="slider1" class="carousel slide mb-5" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img
-                  class="d-block img-fluid carousel-img w-100"
-                  src="./img/download.jpeg"
-                  alt="First Slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block img-fluid carousel-img w-100"
-                  src="./img/download1.jpeg"
-                  alt="Second Slide"
-                />
-              </div>
-              <div class="carousel-item">
-                <img
-                  class="d-block img-fluid carousel-img w-100"
-                  src="./img/download2.jpeg"
-                  alt="Third Slide"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="card-section">
-        <h4>Best Seller</h4>
-        <div class="card--slider">
-          <div class="card--content shadow-sm p-3 mb-5 bg-white rounded">
-            <div class="img-same-height">
-              <img
-                class="card-img-top"
-                src="./img/download.jpeg"
-                alt="Card image cap"
-              />
-            </div>
-            <div class="card-body p-1">
-              <p class="card-title w-100 mb-1">Fried Quail</p>
-              <p class="w-100 text-primary mb-1"><strong>39.0 EGP</strong></p>
-              <a href="#" class="btn btn-primary btn-block">Add</a>
-            </div>
-          </div>
-          <div class="card--content shadow-sm p-3 mb-5 bg-white rounded">
-            <div class="img-same-height">
-              <img
-                class="card-img-top"
-                src="./img/download1.jpeg"
-                alt="Card image cap"
-              />
-            </div>
-            <div class="card-body p-1">
-              <p class="card-title w-100 mb-1">Fried Quail</p>
-              <p class="w-100 text-primary mb-1"><strong>39.0 EGP</strong></p>
-              <a href="#" class="btn btn-primary btn-block">Add</a>
-            </div>
-          </div>
-          <div class="card--content shadow-sm p-3 mb-5 bg-white rounded">
-            <div class="img-same-height">
-              <img
-                class="card-img-top"
-                src="./img/download2.jpeg"
-                alt="Card image cap"
-              />
-            </div>
-            <div class="card-body p-1">
-              <p class="card-title w-100 mb-1">Fried Quail</p>
-              <p class="w-100 text-primary mb-1"><strong>39.0 EGP</strong></p>
-              <a href="#" class="btn btn-primary btn-block">Add</a>
-            </div>
-          </div>
-          <div class="card--content shadow-sm p-3 mb-5 bg-white rounded">
-            <div class="img-same-height">
-              <img
-                class="card-img-top"
-                src="./img/download3.jpeg"
-                alt="Card image cap"
-              />
-            </div>
-            <div class="card-body p-1">
-              <p class="card-title w-100 mb-1">Fried Quail</p>
-              <p class="w-100 text-primary mb-1"><strong>39.0 EGP</strong></p>
-              <a href="#" class="btn btn-primary btn-block">Add</a>
-            </div>
-          </div>
-          <div class="card--content shadow-sm p-3 mb-5 bg-white rounded">
-            <div class="img-same-height">
-              <img
-                class="card-img-top"
-                src="./img/download.jpeg"
-                alt="Card image cap"
-              />
-            </div>
-            <div class="card-body p-1">
-              <p class="card-title w-100 mb-1">Fried Quail</p>
-              <p class="w-100 text-primary mb-1"><strong>39.0 EGP</strong></p>
-              <a href="#" class="btn btn-primary btn-block">Add</a>
-            </div>
-          </div>
-          <div class="card--content shadow-sm p-3 mb-5 bg-white rounded">
-            <div class="img-same-height">
-              <img
-                class="card-img-top"
-                src="./img/download1.jpeg"
-                alt="Card image cap"
-              />
-            </div>
-            <div class="card-body p-1">
-              <p class="card-title w-100 mb-1">Fried Quail</p>
-              <p class="w-100 text-primary mb-1"><strong>39.0 EGP</strong></p>
-              <a href="#" class="btn btn-primary btn-block">Add</a>
-            </div>
-          </div>
-          <div class="card--content shadow-sm p-3 mb-5 bg-white rounded">
-            <div class="img-same-height">
-              <img
-                class="card-img-top"
-                src="./img/download2.jpeg"
-                alt="Card image cap"
-              />
-            </div>
-            <div class="card-body p-1">
-              <p class="card-title w-100 mb-1">Fried Quail</p>
-              <p class="w-100 text-primary mb-1"><strong>39.0 EGP</strong></p>
-              <a href="#" class="btn btn-primary btn-block">Add</a>
-            </div>
-          </div>
-          <div class="card--content shadow-sm p-3 mb-5 bg-white rounded">
-            <div class="img-same-height">
-              <img
-                class="card-img-top"
-                src="./img/download3.jpeg"
-                alt="Card image cap"
-              />
-            </div>
-            <div class="card-body p-1">
-              <p class="card-title w-100 mb-1">Fried Quail</p>
-              <p class="w-100 text-primary mb-1"><strong>39.0 EGP</strong></p>
-              <a href="#" class="btn btn-primary btn-block">Add</a>
-            </div>
-          </div>
-          <div class="card--content shadow-sm p-3 mb-5 bg-white rounded">
-            <div class="img-same-height">
-              <img
-                class="card-img-top"
-                src="./img/download.jpeg"
-                alt="Card image cap"
-              />
-            </div>
-            <div class="card-body p-1">
-              <p class="card-title w-100 mb-1">Fried Quail</p>
-              <p class="w-100 text-primary mb-1"><strong>39.0 EGP</strong></p>
-              <a href="#" class="btn btn-primary btn-block">Add</a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="our-menu-section">
-        <h4>OUR MENU</h4>
-        <div class="row">
-          <div class="col-6 col-md-4 col-lg-3 p-1 our-menu-card">
+        <div class="col-6 col-md-4 col-lg-3 p-1 our-menu-card">
+          <a href="./menu.html">
             <!-- <div class="our-menu-card"> -->
             <img src="./img/fried.jpeg" alt="" class="our-menu-img" />
             <!-- </div> -->
             <p class="our-menu-text text-white">Fried</p>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 p-1 our-menu-card">
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 p-1 our-menu-card">
+          <a href="./menu.html">
             <img src="./img/grilled.jpeg" alt="" class="our-menu-img" />
             <p class="our-menu-text text-white">Grilled</p>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 p-1 our-menu-card">
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 p-1 our-menu-card">
+          <a href="./menu.html">
             <img src="./img/meal.jpeg" alt="" class="our-menu-img" />
             <p class="our-menu-text text-white">Meals</p>
-          </div>
-          <div class="col-6 col-md-4 col-lg-3 p-1 our-menu-card">
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-3 p-1 our-menu-card">
+          <a href="./menu.html">
             <img src="./img/sandwich.jpeg" alt="" class="our-menu-img" />
             <p class="our-menu-text text-white">Sandwich</p>
-          </div>
+          </a>
         </div>
-      </section>
-    </div>
-    <script src="jquery-3.5.1.min.js"></script>
-    <script src="bootstrap.min.js"></script>
-    <script src="main.js"></script>
-  </body>
+      </div>
+    </section>
+  </div>
+  <script src="jquery-3.5.1.min.js"></script>
+  <script src="bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,39 @@
+body {
+    font-family: "Lato";
+    background-color: var(--primary);
+}
+
+.signin-container {
+    position: relative;
+    height: 90vh;
+}
+
+.signin-form {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.border-bottom-specified {
+    border-bottom: 1px solid white;
+}
+
+.placeholder-white::-webkit-input-placeholder {
+    /* Edge */
+    color: white;
+}
+
+.placeholder-white:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+}
+
+.placeholder-white::placeholder {
+    color: white;
+}
+
+.caret-blue {
+    caret-color: #007bff;
+}
